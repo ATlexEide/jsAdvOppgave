@@ -12,7 +12,7 @@ const products = [
 // Case 1:
 
 // Sorter produkter etter pris mindre enn oppgitt pris
-function costLessThan(price) {
+function getItemsCostLessThan(price) {
   return products.filter((product) => product.price < price);
 }
 // Returnerer en liste med produktnavn
