@@ -37,5 +37,11 @@ function addToLuxuryCorner(luxuryPrice, inventory = products) {
     );
   }
 }
-addToLuxuryCorner(1000);
-console.table(luxuryCorner[0]);
+// addToLuxuryCorner(1000);
+// console.table(luxuryCorner[0]);
+
+// Finn total verdi av inventar
+function getInventoryValue(inventory) {
+  return inventory.reduce((acc, product) => acc + product.price, 0);
+}
+console.log(getInventoryValue(products));
