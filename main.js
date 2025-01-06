@@ -25,4 +25,17 @@ function getProductsInCategory(category, inventory = products) {
     .filter((product) => product.category === category)
     .map((product) => product.name);
 }
-console.log(getProductsInCategory("electronics"));
+// console.log(getProductsInCategory("electronics"));
+
+// Sjekker om det finnes prudukter som koster mer en gitt verdi, om ja, legg det til i luksushjørnet
+const luxuryCorner = [];
+function addToLuxuryCorner(luxuryPrice, inventory = products) {
+  const checkValue = (product) => product.price > luxuryPrice;
+  if (inventory.some(checkValue)) {
+    luxuryCorner.push(
+      inventory.filter((product) => product.price > luxuryPrice)
+    );
+  }
+}
+addToLuxuryCorner(1000);
+console.table(luxuryCorner[0]);
