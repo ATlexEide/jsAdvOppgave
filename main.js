@@ -46,7 +46,6 @@ function addToLuxuryCorner(luxuryPrice, inventory = products) {
 function getInventoryValue(inventory) {
   return inventory.reduce((acc, product) => acc + product.price, 0);
 }
-console.log(getInventoryValue(products));
 
 // Case 2:
 // Finn og list alle produkter som koster mindre en 200
@@ -59,4 +58,7 @@ const clothing = getProductsInCategory("clothing");
 
 // Lister produkter verdt mer en 1000
 addToLuxuryCorner(1000);
-console.table(luxuryCorner[0]);
+// console.table(luxuryCorner[0]);
+
+// Gir prisen på inventaret
+console.log(getInventoryValue(products));
