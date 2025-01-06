@@ -56,3 +56,7 @@ const discountedItemsLessThanTwoHundred = getProductNames(
 
 // Lister klær
 const clothing = getProductsInCategory("clothing");
+
+// Lister produkter verdt mer en 1000
+addToLuxuryCorner(1000);
+console.table(luxuryCorner[0]);
