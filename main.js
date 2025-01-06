@@ -13,3 +13,8 @@ const products = [
 function costLessThan(price) {
   return products.filter((product) => product.price < price);
 }
+// Returnerer en liste med produktnavn
+function getProductNames(inventory) {
+  return inventory.map((product) => product.name);
+}
+console.log(getProductNames(products));
