@@ -9,6 +9,8 @@ const products = [
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
 
+// Case 1:
+
 // Sorter produkter etter pris mindre enn oppgitt pris
 function costLessThan(price) {
   return products.filter((product) => product.price < price);
