@@ -47,3 +47,5 @@ function getInventoryValue(inventory) {
   return inventory.reduce((acc, product) => acc + product.price, 0);
 }
 console.log(getInventoryValue(products));
+
+// Case 2:
