@@ -49,3 +49,7 @@ function getInventoryValue(inventory) {
 console.log(getInventoryValue(products));
 
 // Case 2:
+// Finn og list alle produkter som koster mindre en 200
+const discountedItemsLessThanTwoHundred = getProductNames(
+  getItemsCostLessThan(200)
+);
