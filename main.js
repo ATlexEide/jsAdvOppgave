@@ -17,4 +17,12 @@ function costLessThan(price) {
 function getProductNames(inventory) {
   return inventory.map((product) => product.name);
 }
-console.log(getProductNames(products));
+// console.log(getProductNames(products));
+
+// Returnerer en liste over prudukter i gitt kategori
+function getProductsInCategory(category, inventory = products) {
+  return inventory
+    .filter((product) => product.category === category)
+    .map((product) => product.name);
+}
+console.log(getProductsInCategory("electronics"));
