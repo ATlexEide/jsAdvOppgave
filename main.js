@@ -53,3 +53,6 @@ console.log(getInventoryValue(products));
 const discountedItemsLessThanTwoHundred = getProductNames(
   getItemsCostLessThan(200)
 );
+
+// Lister klær
+const clothing = getProductsInCategory("clothing");
