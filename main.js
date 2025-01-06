@@ -8,3 +8,8 @@ const products = [
   { name: "T-shirt", price: 50, category: "clothing" },
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
+
+// Sorter produkter etter pris mindre enn oppgitt pris
+function costLessThan(price) {
+  return products.filter((product) => product.price < price);
+}
